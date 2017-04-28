@@ -1,8 +1,11 @@
 {
   "name": "sorb",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "A nodejs web framework,build with koa 2.x",
-  "main": "./bin/sorb.js",
+  "main": "./lib",
+  "bin": {
+    "sorb": "./bin/sorb"
+  },
   "scripts": {
     "build": "rm -rf lib && babel src --out-dir lib",
     "test": "npm run build && node ./test/test.js"

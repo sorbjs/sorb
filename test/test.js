@@ -3,4 +3,5 @@
  */
 require('../lib')({
     port:'8100',
+    root:"/lib"
 });

@@ -25,9 +25,11 @@ else {
 
     program
         .version(require('../package').version, '-v, --version')
-        .option('-p, --port <n>', 'server port. Default: 8100')
+        .option('-p,--port <n>', 'server port. Default: 8100')
+        .option('-r,--root <n>', 'server index root. Default: ./')
         .parse(process.argv);
     require('../lib')({
         port: program.port || '8100',
+        root: program.root || ""
     });
 }

@@ -4,11 +4,14 @@
 import koa from 'koa';
 import koaServeIndex from 'koa-serve-index';
 import koaStatic  from 'koa-static';
-const proxy = require('koa-proxies')
+import path from 'path';
+const proxy = require('koa-proxies');
+
 const app = new koa();
 const defaultCwd = process.cwd();
 const defaultArgs={
-    port:3001
+    port:3001,
+    root:"./"
 }
 
 function proxyConfigAnalyze(context) {
@@ -29,7 +32,8 @@ export default function createServer(_args){
 
     const args={...defaultArgs,..._args};
 
-    app.use(koaServeIndex(defaultCwd,{
+    let cwd= path.join(defaultCwd,args.root);
+    app.use(koaServeIndex(cwd,{
         hidden: true,
         view: 'details',
     }));

@@ -9,17 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/sea35/peajs.git"
+    "url": "git+ssh://git@github.com/sorbjs/sorb.git"
   },
   "keywords": [
     "nodejs"
   ],
-  "author": "sea35",
+  "author": "sorbjs",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/sea35/peajs/issues"
+    "url": "https://github.com/sorbjs/sorb/issues"
   },
-  "homepage": "https://github.com/sea35/peajs#readme",
+  "homepage": "https://github.com/sorbjs/sorb#readme",
   "dependencies": {
     "async": "^1.5.0",
     "babel-runtime": "^6.9.2",

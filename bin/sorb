@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 const script = process.argv[2];
-const chalk = require('chalk');
 var cp = require('child_process');
 
 

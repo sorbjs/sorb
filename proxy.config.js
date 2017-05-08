@@ -1,14 +1,11 @@
 /**
- * Created by sea35 on 2017/4/27.
+ * Created by sea35 on 2017/4/28.
  */
-'use strict';
-
-const integralHosts="https://www.baidu.com";
+const ranch="http://172.16.34.41:9090";
 
 
 const proxy = {
-    '/baidu/(.*)': integralHosts,
+    "/": ranch,
 }
-
 
 module.exports = proxy;
